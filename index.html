@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Elavon Residences</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <img src="images/elavon-logo.png" class="d-block mx-auto w-25 m-2" alt="elavon logo">
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+        <a class="navbar-brand" href="#">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link disabled" href="#">FLOOR PLANS</a>
+                <a class="nav-item nav-link disabled" href="#">AMENITIES</a>
+                <a class="nav-item nav-link disabled" href="#">RESIDENTS</a>
+                <a class="nav-item nav-link" href="#contact-us">CONTACT US</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="position-relative">
+        <h1 class="position-absolute text-light ml-3 ml-sm-5 mt-3 mt-sm-5 "
+            style="font-family: Times New Roman, cursive; font-size: 2.75rem;">
+            The art
+            of
+            New York living </h1>
+        <img src="images/header-banner.jpg" class="img-fluid w-100" alt="banner skyline">
+    </section>
+
+    <!-- Main section -->
+    <section class="pt-5 pb-2">
+        <div class="container px-5 mx-auto d-block">
+            <div class="row my-3">
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-5 mt-3">LUXURY</h2>
+                    <p> Elavon luxury residences in New York offer
+                        stunning finishes, upscale amenities and two rooftop
+                        decks with breathtaking views of Manhattan and downtown New York. These residences rentals were
+                        designed with your lifestyle as top priority including Predictive Service and 24-hour concierge
+                        to meet your needs.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/skyscraper-down-view.jpg" class="d-block mw-100 rounded m-3 mx-auto"
+                        alt="view from skyscraper">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12 col-lg-6">
+                    <img src="images/ny-night-view.jpg" class="d-block mw-100 rounded m-3 mx-auto" alt="ny night viewr">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 class="mb-5 mt-3">KEY LOCATION</h2>
+                    <p>Gracefully adoring the famous downtown skyline, the luxury residences rentals at Elavon are
+                        conveniently located in the South Loop neighborhood, just steps from New York’s public
+                        transportation and
+                        near the downtown upscale shopping, dining and entertainment you love. Contact us today to learn
+                        more about Elavon Residences and the distinct way of life offered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us -->
+    <section id="contact-us" class="bg-secondary py-5">
+        <div class="container text-light">
+            <h2>CONTACT US</h2>
+            <p>Yes, you can make Elavon Residences your new home! Simply make an appointment to see one of our
+                professional leasing agents and let them help you find the perfect residence to meet your specific
+                needs. Just fill out the form below and one of our leasing agents will contact you promptly.</p>
+
+            <div class="contact-info">
+                <div>
+                    <strong>Address:</strong><br>
+                    <p>8888 Cummings Vista Apt. 101, Manhattan, NY 95473</p>
+                </div>
+                <div>
+                    <strong>Phone:</strong><br>
+                    <p>(512) 232-1111</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-8 p-3 bg-light rounded">
+                    <form action="/php/formSubmit.php" method="POST">
+                        <div class="form-group">
+                            <label for="fname-input">First Name:</label>
+                            <input name="first_name" type="text" class="form-control" id="fname-input"
+                                placeholder="John" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="lname-input">Last Name:</label>
+                            <input name="last_name" type="text" class="form-control" id="lname-input" placeholder="Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input">E-mail:</label>
+                            <input name="email" type="email" class="form-control" id="email-input"
+                                placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-input">Phone Number:</label>
+                            <input name="phone" type="tel" class="form-control" id="phone-input"
+                                placeholder="555-555-5555" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject-input">Subject:</label>
+                            <input name="subject" type="text" class="form-control" id="subject-input"
+                                placeholder="Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-input">Message:</label>
+                            <textarea name="message" class="form-control" id="message-input"
+                                placeholder="Message...."></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit"> submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col text-center">
+                    <div class="copyright">copyright 2018 Elavon Residences</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
